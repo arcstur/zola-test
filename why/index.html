@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Why | IOL 2024 </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    <style>
+    :root {
+        /* Primary theme color */
+        --primary-color: #FFFFF0;
+        /* Primary theme text color */
+        --primary-text-color: #A62121;
+        --primary-text-color-over: #FFB219;
+        /* Primary theme link color */
+        --primary-link-color: #D480FF;
+        /* Secondary color: the background body color */
+        --secondary-color: #fcfaf6;
+        --secondary-text-color: #303030;
+        /* Highlight text color of table of content */
+        --toc-highlight-text-color: #d46e13;
+        --toc-background-color: white;
+        --code-color: #4a4a4a;
+        --code-background-color: white;
+
+        --shadow-color: #ddd;
+
+        /* Fonts */
+        --header-font-family: 'neris-light', sans-serif;
+        --text-font-family: 'neris-light', sans-serif;
+    }
+</style>
+
+    
+<link href="https://www.dafontfree.net/embed/bmVyaXMtbGlnaHQmZGF0YS80Ni9uLzYwNzcwL05lcmlzLUxpZ2h0Lm90Zg" rel="stylesheet" type="text/css"/>
+<link href="https://www.dafontfree.net/embed/bmVyaXMtYmxhY2smZGF0YS80Ni9uLzYwMzY2L05lcmlzLUJsYWNrLm90Zg" rel="stylesheet" type="text/css"/>
+
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="https://arcstur.github.io/zola-test/juice.css">
+    
+    
+</head>
+
+<body>
+    
+<header class="box-shadow">
+    
+
+<a href="https://arcstur.github.io/zola-test/">
+    <div class="logo">
+        <img src="https://arcstur.github.io/zola-test/logo-IOL-2024.svg" alt="logo">
+        IOL 2024
+    </div>
+</a>
+
+<nav>
+    
+    
+    
+    <a class="nav-item subtitle-text" href="https://arcstur.github.io/zola-test/what/">What</a>
+    
+    
+    
+    
+    <a class="nav-item subtitle-text" href="https://arcstur.github.io/zola-test/why/">Why</a>
+    
+    
+    
+    
+    <a class="nav-item subtitle-text" href="https://arcstur.github.io/zola-test/who/">Who</a>
+    
+    
+    
+    
+    <a class="nav-item subtitle-text" href="https://arcstur.github.io/zola-test/where/">Where</a>
+    
+    
+    
+        
+        <a class="nav-item subtitle-text" href="https://regsy.linguistics.bg">Registration</a>
+        
+    
+</nav>
+
+</header>
+
+
+    <main>
+        
+        
+        
+        
+        
+        <div class="toc">
+            <div class="toc-sticky">
+                
+                <div class="toc-item">
+                    <a class="subtext" href="https://arcstur.github.io/zola-test/why/#whyyyyyyyy">Whyyyyyyyy</a>
+                </div>
+                
+                
+            </div>
+        </div>
+        
+        
+
+        <div class="content text">
+            
+<div class="heading-text">Why the IOL happens?</div>
+<h1 id="whyyyyyyyy">Whyyyyyyyy</h1>
+<p>aaaa</p>
+
+
+        </div>
+
+        
+        
+    </main>
+
+    
+<footer>
+</footer>
+
+</body>
+<script>
+    const scrollHandler = entries => {
+        // Find the first entry which intersecting and ratio > 0.9 to highlight.
+        let entry = entries.find(entry => {
+            return entry.isIntersecting && entry.intersectionRatio > 0.9;
+        });
+        if (!entry) return;
+
+        document.querySelectorAll(".toc a").forEach((item) => {
+            item.classList.remove("active");
+        });
+
+        // let url = new URL(`#${entry.target.id}`);
+        let link = document.querySelector(`.toc a[href$="${decodeURIComponent(`#${entry.target.id}`)}"]`)
+        if (link) {
+            link.classList.add("active");
+            link.scrollIntoView({ behavior: "auto", block: "nearest" });
+        }
+    };
+    // Set -100px root margin to improve highlight experience.
+    const observer = new IntersectionObserver(scrollHandler, { threshold: 1 });
+    let items = document.querySelectorAll('h1,h2,h3,h4,h5,h6');
+    items.forEach(item => observer.observe(item));
+</script>
+
+</html>
